@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dahboard"
+    android:background="@drawable/nback">
+
+
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/regbt"
+        android:layout_width="400dp"
+        android:layout_height="700dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:contentDescription="@string/submit"
+                android:elevation="0dp"
+                android:src="@drawable/ic_action_arrowfo"
+                app:elevation="0dp"
+                app:fabCustomSize="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Train Booking\nOptions"
+                android:textColor="#191919"
+                android:textSize="21dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+
+
+
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/resorts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginBottom="35dp"
+                android:background="@color/white"
+                android:contentDescription="@string/submit"
+                android:elevation="0dp"
+                android:src="@drawable/ic_action_arrowfo"
+                app:elevation="0dp"
+                app:fabCustomSize="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Resorts Booking"
+                android:textColor="#191919"
+                android:textSize="22dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="100dp"
+                android:contentDescription="@string/submit"
+                android:elevation="0dp"
+                android:src="@drawable/ic_action_arrowfo"
+                app:elevation="0dp"
+                app:fabCustomSize="150dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Travel Sites"
+                android:textColor="#191919"
+                android:textSize="21dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

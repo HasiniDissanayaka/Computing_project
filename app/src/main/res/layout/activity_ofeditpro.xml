@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ofeditpro"
+    android:background="@drawable/jackson">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@drawable/whit"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gotham"
+            android:textSize="25dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/regbt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_profile"
+            tools:ignore="VectorDrawableCompat" />
+
+
+        <EditText
+            android:id="@+id/faname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="First Name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/laname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:hint="Email"
+            android:editable="false"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/phnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center_horizontal"
+            android:hint="Nic"
+            android:editable="false"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/compass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="#6C6C6C"
+            android:textSize="18sp" />
+
+        <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/savemenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="35dp"
+                android:contentDescription="@string/submit"
+                android:elevation="0dp"
+                android:src="@drawable/ic_action_save"
+                app:elevation="0dp"
+                app:fabCustomSize="60dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="98dp"
+                android:layout_marginLeft="98dp"
+                android:layout_marginTop="35dp"
+                android:text="SAVE"
+                android:textColor="#191919"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+        </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

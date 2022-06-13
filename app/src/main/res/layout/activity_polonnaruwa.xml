@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        tools:context=".Polonnaruwa">
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="414dp"
+        android:layout_height="307dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"></com.smarteist.autoimageslider.SliderView>
+    <TextView
+        android:text="Polonnaruwa is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city's heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession"
+        android:layout_width="377dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="@+id/image_slider" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="356dp" android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:text="Polonnaruwa"
+        android:layout_width="221dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="32dp" android:id="@+id/textView10" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="320dp"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="404dp"
+            android:layout_height="282dp"
+            android:layout_above="@+id/textView10"
+
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="516dp"
+            android:text="Polonnaruwa was the second capital of Sri Lanka after the destruction of Anuradhapura in 993. It comprises, besides the Brahmanic monuments built by the Cholas, the monumental ruins of the fabulous garden-city created by Parakramabahu I in the 12th century.
+
+"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_slider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

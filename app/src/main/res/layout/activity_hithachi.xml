@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jackson"
+    tools:context=".Hithachi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="102dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="Hithach and Compartment\n Booking"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="178dp"
+                android:layout_height="125dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="193dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/on" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/vie_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".76"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0.05dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="171dp"
+
+
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="Hithachi or Train Compartment"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+                <EditText
+                    android:id="@+id/nic"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/input_style"
+                    android:hint="NIC"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+
+                <EditText
+                    android:id="@+id/cnum"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="Contact Numer"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="Address"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+                <EditText
+                    android:id="@+id/sstation"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="Start Station"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+                <EditText
+                    android:id="@+id/estation"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="End Station"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="360dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/input_style"
+                    android:hint="Date"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBaseline_toBottomOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.686"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.249" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="147dp"
+        android:layout_height="42dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/aclonica"
+        android:text="Book"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="100dp"
+
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@color/JacksonsPurple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943"/>
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="112dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/blue_default"
+            android:text="Guidline for Hithachi and Compartment Booking"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/guid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_download"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="90dp"
+            android:textSize="20sp"
+            android:layout_marginRight="90dp"
+            android:background="@color/blue_default"
+            android:hint="Download" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

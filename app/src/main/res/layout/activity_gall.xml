@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        tools:context=".Gall">
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="414dp"
+        android:layout_height="307dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"></com.smarteist.autoimageslider.SliderView>
+    <TextView
+        android:text="Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city's heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession"
+        android:layout_width="377dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="@+id/image_slider" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="336dp" android:layout_marginEnd="16dp"/>
+    <TextView
+        android:text="Galle"
+        android:layout_width="231dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="36dp" android:id="@+id/textView10" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="300dp"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="388dp"
+            android:layout_height="349dp"
+            android:layout_above="@+id/textView10"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="476dp"
+            android:text="Galle   is a major city in Sri Lanka, situated on the southwestern tip, 119 kilometres (74 mi) from Colombo. Galle is the provincial capital and largest city of Southern Province, Sri Lanka and is the capital of Galle District.
+
+Galle was known as Gimhathiththa[1] before the arrival of the Portuguese in the 16th century, when it was the main port on the island. Ibn Batuta, a Moroccan Berber Muslim traveller in the 14th century, referred to it as Qali.reached the height of its development in the 18th century, during the Dutch colonial period. Galle is the best example of a fortified city built by the Portuguese in South and Southeast Asia, showing the interaction between Portuguese architectural styles and native traditions. The city was extensively fortified by the Dutch during the 17th century from 1649 onwards. The Galle fort is a world heritage site and is the largest remaining fortress in Asia built by European occupiers.
+
+Other prominent landmarks in Galle include the city's natural harbour, the National Maritime Museum, St. Mary's Cathedral founded by Jesuit priests, one of the main Shiva temples on the island, and Amangalla, the historic luxury hotel. On 26 December 2004, the city was devastated by the massive tsunami caused by the 2004 Indian Ocean earthquake, which occurred off the coast of Indonesia a thousand miles away. Thousands were killed in the city alone. Galle is home to the Galle International Stadium, which is considered to be one of the most picturesque cricket grounds in the world.[3] The ground, which was severely damaged by the tsunami, was rebuilt and test matches resumed there on 18 December 2007.
+
+"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_slider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

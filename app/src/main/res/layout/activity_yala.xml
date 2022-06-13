@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        tools:context=".Yala">
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="414dp"
+        android:layout_height="307dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="600"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"></com.smarteist.autoimageslider.SliderView>
+    <TextView
+        android:text="Kandy is a large city in central Sri Lanka. It's set on a plateau surrounded by mountains, which are home to tea plantations and biodiverse rainforest. The city's heart is scenic Kandy Lake (Bogambara Lake), which is popular for strolling. Kandy is famed for sacred Buddhist sites, including the Temple of the Tooth (Sri Dalada Maligawa) shrine, celebrated with the grand Esala Perahera annual procession"
+        android:layout_width="377dp"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="@+id/image_slider" app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="386dp" android:layout_marginEnd="16dp"/>
+    <TextView
+        android:text="Yala National Park"
+        android:layout_width="231dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_height="36dp" android:id="@+id/textView10" android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="350dp"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="390dp"
+            android:layout_height="283dp"
+            android:layout_above="@+id/textView10"
+            android:layout_alignTop="@+id/textView10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="536dp"
+            android:text="The Yala area is mostly composed of metamorphic rock belonging to the Precambrian era and classified into two series, Vijayan series and Highland series. Reddish brown soil and low humic grey soil are prominent among six soil types. Yala is situated in the lowest peneplain of Sri Lanka, which extends from Trincomalee to Hambantota. Topographically the area is a flat and mildly undulating plain that runs to the coast with elevation is 30 metres (98 ft) close to the coast while rising in the interior to 100–125 metres (328–410 ft). The national park is situated in the dry semi-arid climatic region and rain is received mainly during the northeast monsoon. The mean annual rainfall ranges between 500–775 millimetres (19.7–30.5 in) while the mean temperature ranges between 26.4 °C (79.5 °F) in January to 30 °C (86 °F) in April. It is windier in Yala, during the southwest monsoon compared to the wind during the northeast monsoon with wind speeds from 23 kilometres per hour (14 mph) to 15 kilometres per hour (9.3 mph).[3]
+
+Water is abundant after the northeast monsoon, but during the dry season surface water becomes an important factor. The bodies of surface water appear in the forms of streams, tanks, waterholes, rock pools, and lagoons. Waterholes occur in low lying places while rock pools of varying size are capable of containing water year-round, and are hence an important source of water for elephants. For many water birds and water buffaloes natural waterholes are ideal habitats. Such reservoirs are largely concentrated to the Block I followed by Block II. Several tanks are there including, Maha Seelawa, Buthawa, Uraniya, and Pilinnawa tanks.[2] Many rivers and streams flow in a southeasterly direction, originating in the highlands of adjacent Uva and central hills. Kumbukkan Oya in the east and Menik River and its tributaries in the west flow across the park, and provide an important water source in the dry season to wild animals of the park. Normally the streams of the park are dry during the drought season. These rivers and streams exhibit a degree of runoff fluctuations between wet and dry seasons. Kumbukkan Oya discharges seven times as much water in the rainy season than in the dry season. A number of lagoons are situated along the coast line of the park.[3] There are several routes to get to Yala from Colombo, while the route via Ratnapura and Tissamaharama is the shortest with 270 kilometres (170 mi).[2]
+
+"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_slider" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+
+            >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+
+        tools:context=".Nuwaraeliya">
+
+
+    <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="2"
+            app:sliderStartAutoCycle="true"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="788dp">
+    </com.smarteist.autoimageslider.SliderView>
+    <TextView
+            android:text="Nuwara Eliya is a city in the tea country hills of central Sri Lanka. The naturally landscaped Hakgala Botanical Gardens displays roses and tree ferns, and shelters monkeys and blue magpies. Nearby Seetha Amman Temple, a colorful Hindu shrine, is decorated with religious figures. Densely forested Galway's Land National Park is a sanctuary for endemic and migratory bird species, including bulbuls and flycatchers"
+            android:layout_width="377dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" android:id="@+id/textView9" android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintTop_toTopOf="@+id/image_slider" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="336dp" android:layout_marginEnd="16dp"/>
+    <TextView
+            android:text="Nuwara Eliya"
+            android:layout_width="231dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_height="36dp" android:id="@+id/textView10" android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="300dp"
+            app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+            android:text="Elevation: 1,868 m\n
+Weather: 19°C, Wind W at 5 km/h, 79% Humidity weather.com\n
+Province: Central Province\n
+Population: 27,500 (2011)\n
+District: Nuwara Eliya District\n
+Area code: 052\n
+Local time: Saturday 11:16"
+            android:layout_width="355dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_height="143dp" android:id="@+id/textView17" android:layout_alignParentEnd="true"
+            android:layout_above="@+id/textView10"
+            android:layout_alignTop="@+id/textView10"
+            app:layout_constraintTop_toTopOf="@+id/image_slider"
+            android:layout_marginTop="476dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/nlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="332dp"
+        android:text="Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_slider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

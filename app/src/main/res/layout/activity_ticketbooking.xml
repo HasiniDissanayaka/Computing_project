@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="true"
+
+    android:background="@drawable/primary"
+    tools:context=".Ticketbooking">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select your train"
+                android:textSize="20sp"/>
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner1">
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="273dp"
+            android:layout_height="35dp"
+            android:text="Search"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1st class ticket price(LKR) :"/>
+
+            <TextView
+                android:id="@+id/price1st"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2nd class ticket price(LKR) :"/>
+
+            <TextView
+                android:id="@+id/price2nd"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date/time :"/>
+
+            <EditText
+                android:id="@+id/datee"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="date"/>
+
+            <EditText
+                android:id="@+id/monthh"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="month   "/>
+
+            <EditText
+                android:text=""
+                android:id="@+id/timee"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="time   "/>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of 1st class tickets :"/>
+
+            <EditText
+                android:text="0"
+                android:inputType="number"
+                android:id="@+id/firstclasstickets"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="enter number" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"/>
+
+        <TextView
+
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your details below"/>
+
+
+        <EditText
+            android:id="@+id/name"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your name here"/>
+        <EditText
+            android:id="@+id/mobilenum"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your mobile number here"/>
+        <EditText
+            android:id="@+id/etemail"
+            android:textColor="#000"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your E-mail here"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/test"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="Your total is:"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totaltext"
+                android:text="0.00 LKR"
+                android:textSize="25sp"/>
+
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:text="get total"
+                android:padding="10dp"
+                android:id="@+id/totalval"/>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/proceed"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="proceed with payment"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

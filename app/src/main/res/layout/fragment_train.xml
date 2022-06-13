@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="match_parent"
+    app:layout_editor_absoluteX="1dp"
+    android:fillViewport="true"
+    app:layout_editor_absoluteY="1dp">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".TrainFragment">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:background="@drawable/header"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/profile"
+                android:layout_width="63dp"
+
+
+                android:layout_height="57dp"
+                android:layout_marginStart="300dp"
+                android:backgroundTint="@color/tranblack"
+                android:src="@drawable/ew"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.567"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.047" />
+
+            <TextView
+                android:layout_width="265dp"
+                android:layout_height="40dp"
+
+                android:text=" Welcome to Trainline"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.109"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.107" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/white_rectangle_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Search element"
+                    android:imeOptions="actionSearch"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColor="@color/pearlriver"
+                    android:textColorHint="@color/pearlriver"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/seacrch_icon"
+                    android:contentDescription="@string/app_name"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_search"
+                    android:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="445dp"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="217dp"
+                android:layout_height="30dp"
+                android:layout_row="0"
+
+                android:layout_column="0"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="179dp"
+                    android:layout_height="31dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginBottom="496dp"
+                    android:fontFamily="@font/gotham"
+                    android:text="Booking Section"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteX="16dp" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCategory"
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="312dp"
+                app:cardCornerRadius="20dp"
+
+                app:cardBackgroundColor="@color/JacksonsPurple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/q"
+                    android:id="@+id/compartment"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:text="          Train\n  Compartment\n       Booking"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"/>
+
+                <!--Label-->
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCategory1"
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="180dp"
+                app:cardBackgroundColor="@color/JacksonsPurple"
+
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/hithachi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="60dp"
+                    android:src="@drawable/m" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="90dp"
+                    android:text="  Hithachi  Train\n     Booking"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--Label-->
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCategory2"
+                android:layout_width="115dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="48dp"
+                app:cardBackgroundColor="@color/JacksonsPurple"
+
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/resort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="60dp"
+                    android:src="@drawable/r" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="90dp"
+                    android:text="  Train   Resorts\n     Booking"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <!--Label-->
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="217dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313">
+            <TextView
+                android:layout_width="179dp"
+                android:layout_height="31dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_marginBottom="496dp"
+                android:fontFamily="@font/gotham"
+                android:text="For Your Train"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:fillViewport="true"
+            app:layout_editor_absoluteX="1dp"
+            app:layout_editor_absoluteY="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_weight="9"
+                    android:layout_marginTop="1dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:padding="15dp"
+                    android:paddingTop="20dp"
+
+                    android:rowCount="2">
+
+                    <!-- Row 1 -->
+
+                    <!-- Column 1 -->
+
+
+                    <ImageView
+                        android:id="@+id/bookbtn"
+                        android:layout_width="181dp"
+                        android:layout_height="269dp"
+
+
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/hf" />
+
+                    <ImageView
+                        android:id="@+id/timebtn"
+                        android:layout_width="180dp"
+                        android:layout_height="215dp"
+                        android:layout_row="0"
+
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+
+                        app:srcCompat="@drawable/jin"
+                        tools:layout_editor_absoluteX="215dp"
+                        tools:layout_editor_absoluteY="139dp" />
+
+                    <ImageView
+                        android:id="@+id/shedule"
+                        android:layout_width="181dp"
+                        android:layout_height="220dp"
+
+
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/lo" />
+
+                    <ImageView
+                        android:id="@+id/tracking"
+                        android:layout_width="181dp"
+                        android:layout_height="269dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/gt" />
+                </GridLayout>
+
+                    </LinearLayout>
+
+
+</ScrollView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="1dp"
+            android:fillViewport="true"
+            app:layout_editor_absoluteY="1dp">
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        android:background="@color/white"
+            tools:context=".TravelFragment">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutheader"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/hed"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For Travelers"
+                android:fontFamily="@font/gotham"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="217dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313">
+
+            <TextView
+                android:layout_width="193dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="496dp"
+                android:fontFamily="@font/gotham"
+                android:text="Location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="361dp"
+            android:layout_height="148dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/outline"
+            app:cardBackgroundColor="@color/white"
+
+
+            app:cardCornerRadius="40dp">
+
+
+            <LinearLayout
+                android:layout_width="154dp"
+                android:layout_height="121dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/map" />
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_width="140dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginStart="30sp"
+
+
+                android:fontFamily="@font/gotham"
+                android:text="Get distance of your Location"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="217dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.313">
+
+            <TextView
+                android:layout_width="193dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="496dp"
+                android:fontFamily="@font/gotham"
+                android:text="Travel Sides"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="554dp"
+            android:fillViewport="true"
+            app:layout_editor_absoluteX="1dp"
+            app:layout_editor_absoluteY="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp">
+
+                <GridLayout
+                    android:id="@+id/mainGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_weight="2"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:layout_marginTop="1dp"
+                    android:columnOrderPreserved="false"
+                    android:padding="15dp"
+                    android:paddingTop="20dp"
+
+                    android:rowCount="3">
+                <ImageView
+                    android:id="@+id/nuwaraeliya"
+                    android:layout_width="181dp"
+                    android:layout_height="160dp"
+
+
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.345"
+                    app:srcCompat="@drawable/f" />
+
+                    <ImageView
+                        android:id="@+id/anuradhapura"
+                        android:layout_width="181dp"
+                        android:layout_height="160dp"
+
+
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/ub" />
+
+                    <ImageView
+                        android:id="@+id/kandy"
+                        android:layout_width="181dp"
+                        android:layout_height="169dp"
+
+
+                        android:layout_row="1"
+                        android:layout_column="0"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/io" />
+
+                    <ImageView
+                        android:id="@+id/galle"
+                        android:layout_width="181dp"
+                        android:layout_height="169dp"
+
+
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/la" />
+
+                    <ImageView
+                        android:id="@+id/yala"
+                        android:layout_width="181dp"
+                        android:layout_height="169dp"
+
+
+                        android:layout_row="2"
+                        android:layout_column="0"
+
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/ps" />
+
+                    <ImageView
+                        android:id="@+id/polonnaruwa"
+                        android:layout_width="181dp"
+                        android:layout_height="169dp"
+
+
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:layout_marginStart="10dp"
+
+                        android:layout_marginTop="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.06"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.345"
+                        app:srcCompat="@drawable/yf" />
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+            </LinearLayout>
+</ScrollView>

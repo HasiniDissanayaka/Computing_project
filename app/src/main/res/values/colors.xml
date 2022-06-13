@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#278be3</color>
+    <color name="colorPrimaryDark">#0f5998</color>
+    <color name="colorAccent">#4075a2</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+    <color name="blue_default">#286DE7</color>
+   <color name="Navy">#02055A</color>
+    <color name="PrussianBlue">#000137</color>
+    <color name="CornflowerBlue">#797EF6</color>
+    <color name="Viking">#4ADEDE</color>
+    <color name="PictonBlue">#1AA7EC</color>
+    <color name="JacksonsPurple">#1E2F97</color>
+    <color name="lineColor">#CDCDCD</color>
+    <color name="pearlriver">#D9DDDC</color>
+    <color name="colorPrimaryLight">#E9F8F1</color>
+    <color name="gray">#7B8D90</color>
+    <color name="Loghtsky">#B2CAFA</color>
+    <color name="Coral">#AFDCEC</color>
+    <color name="Hex">#4d4dcf</color>
+    <color name="colohex">#6969d7</color>
+    <color name="Cornflower">#6495ED</color>
+    <color name="blue">#0019F9</color>
+
+
+</resources>

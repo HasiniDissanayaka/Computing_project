@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_logout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Forget Password"
+            android:textColorHint="#434343"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:translationY="12dp" />
+
+        <ImageView
+            android:layout_width="87dp"
+            android:layout_height="89dp"
+            android:src="@drawable/forget"
+            android:translationY="10dp" />
+
+        <EditText
+            android:id="@+id/resetMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/please_enter_your_email"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:translationY="10dp" />
+
+        <Button
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="No"
+            android:textSize="17sp"
+            android:translationX="50dp"
+            android:translationY="20dp"
+            app:backgroundTint="#AB67FF35" />
+
+        <Button
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Submit"
+            android:textSize="17sp"
+            android:translationX="-50dp"
+            android:translationY="-28dp"
+            app:backgroundTint="#9EF80404" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
